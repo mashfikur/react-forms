@@ -17,7 +17,7 @@ const RefForm = () => {
   useEffect(()=>{
     nameRef.current.focus()
   },[])
-
+ 
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -25,7 +25,7 @@ const RefForm = () => {
         <br />
         <input ref={emailRef} type="email" name="email" />
         <br />
-        <input ref={passwordRef} type="password" name="password" />
+        <input ref={passwordRef} type="password" name="password" required />
         <br />
         <button>Submit</button>
       </form>
