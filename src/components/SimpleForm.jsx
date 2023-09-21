@@ -2,6 +2,7 @@ const SimpleForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
+    console.log(e)
     console.log(e.target.email.value)
   };
 
@@ -12,7 +13,6 @@ const SimpleForm = () => {
         <br />
         <input type="email" name="email" />
         <br />
-        {/* <input type="submit" value="Submit" /> */}
         <button>Submit</button>
       </form>
     </div>
